@@ -10083,7 +10083,15 @@ button.complete .successMessage svg {
     font-size: 13px;
     margin-bottom: 5px; }
   .calculator__result {
-    margin-top: 15px; } }
+    margin-top: 15px; }
+  .calculator__feature:first-child:nth-last-child(3),
+  .calculator__feature:first-child:nth-last-child(3) ~ .calculator__feature, .calculator__feature:first-child:nth-last-child(6),
+  .calculator__feature:first-child:nth-last-child(6) ~ .calculator__feature {
+    width: 33.333%; } }
+
+@media (max-width: 619px) {
+  .calculator__feature {
+    width: 50% !important; } }
 
 @media (max-width: 479px) {
   .calculator__left-column {

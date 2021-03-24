@@ -367,6 +367,23 @@
         &__result {
             margin-top: 15px;
         }
+
+        &__feature:first-child:nth-last-child(3),
+        &__feature:first-child:nth-last-child(3) ~ &__feature,
+        &__feature:first-child:nth-last-child(6),
+        &__feature:first-child:nth-last-child(6) ~ &__feature {
+            width: 33.333%;
+        } 
+    }
+}
+
+@media (max-width: 619px) {
+
+    .calculator {
+
+        &__feature {
+            width: 50% !important;
+        }
     }
 }
 
