@@ -9974,6 +9974,7 @@ button.complete .successMessage svg {
     width: calc(33.333% - 7px);
     font-weight: 700;
     font-size: 15px;
+    color: red;
     letter-spacing: -0.015em; }
   .calculator__feature:not(:nth-child(3n+1)) {
     margin-left: 10px; }
