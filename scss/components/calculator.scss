@@ -188,7 +188,7 @@
     .calculator {
 
         &__feature {
-            font-size: 13px;
+            font-size: 12px;
         }
     }
 }
@@ -315,8 +315,12 @@
         }
 
         &__feature {
-            font-size: 9px;
+            width: 50%;
             letter-spacing: -.02em;
+        }
+
+        &__feature:nth-child(n) {
+            margin-left: 0;
         }
     }
 }
@@ -344,10 +348,6 @@
             padding-bottom: 0;
         }
 
-        &__result {
-            text-align: left;
-        }
-
         &__text-wrapper {
             text-align: center;
             margin-top: 30px;
@@ -361,6 +361,11 @@
 
         &__feature {
             font-size: 13px;
+            margin-bottom: 5px;
+        }
+
+        &__result {
+            margin-top: 15px;
         }
     }
 }
@@ -394,7 +399,7 @@
         }
 
         &__feature {
-            font-size: 9px;
+            font-size: 10px;
         }
     }
 }
@@ -409,10 +414,6 @@
 
         &__title {
             font-size: 22px;
-        }
-
-        &__feature {
-            font-size: 8px;
         }
     }
 }

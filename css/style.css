@@ -9990,7 +9990,7 @@ button.complete .successMessage svg {
 
 @media (max-width: 1399px) {
   .calculator__feature {
-    font-size: 13px; } }
+    font-size: 12px; } }
 
 @media (max-width: 1220px) {
   .calculator__form {
@@ -10055,8 +10055,10 @@ button.complete .successMessage svg {
   .calculator__features {
     margin-top: 10px; }
   .calculator__feature {
-    font-size: 9px;
-    letter-spacing: -.02em; } }
+    width: 50%;
+    letter-spacing: -.02em; }
+  .calculator__feature:nth-child(n) {
+    margin-left: 0; } }
 
 @media (max-width: 767px) {
   .calculator__form {
@@ -10070,8 +10072,6 @@ button.complete .successMessage svg {
     padding-left: 0;
     padding-right: 0;
     padding-bottom: 0; }
-  .calculator__result {
-    text-align: left; }
   .calculator__text-wrapper {
     text-align: center;
     margin-top: 30px; }
@@ -10080,7 +10080,10 @@ button.complete .successMessage svg {
     padding-left: 0;
     text-align: center; }
   .calculator__feature {
-    font-size: 13px; } }
+    font-size: 13px;
+    margin-bottom: 5px; }
+  .calculator__result {
+    margin-top: 15px; } }
 
 @media (max-width: 479px) {
   .calculator__left-column {
@@ -10096,15 +10099,13 @@ button.complete .successMessage svg {
   .calculator__image {
     margin-top: 20px; }
   .calculator__feature {
-    font-size: 9px; } }
+    font-size: 10px; } }
 
 @media (max-width: 359px) {
   .calculator__input-wrapper .nice-select {
     font-size: 10px; }
   .calculator__title {
-    font-size: 22px; }
-  .calculator__feature {
-    font-size: 8px; } }
+    font-size: 22px; } }
 
 /* accordion */
 .card {
