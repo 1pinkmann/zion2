@@ -136,14 +136,17 @@ export default class Calculator {
 
     showFeatures() {
         let car = cars.find(item => item.name === this.carName);
+
         let featuresList = car.features;
 
-        featuresList.forEach(feature => {
-            let item = document.createElement('li');
-            item.className = 'calculator__feature';
-            item.textContent = feature;
-            this.features.append(item);
-        })
+        if (featuresList) {
+            featuresList.forEach(feature => {
+                let item = document.createElement('li');
+                item.className = 'calculator__feature';
+                item.textContent = feature;
+                this.features.append(item);
+            })
+        }
     }
 
     removeFeatures() {

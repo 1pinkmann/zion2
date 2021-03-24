@@ -9875,8 +9875,6 @@ button.complete .successMessage svg {
 
 .calculator {
   /* one item */
-  /* three or six items */
-  /* five items */
   /* two or four items */ }
   .calculator__form {
     display: flex;
@@ -9973,25 +9971,21 @@ button.complete .successMessage svg {
     flex-wrap: wrap;
     margin-top: 20px; }
   .calculator__feature {
+    width: calc(33.333% - 7px);
     font-weight: 700;
     font-size: 15px;
     letter-spacing: -0.015em; }
+  .calculator__feature:not(:nth-child(3n+1)) {
+    margin-left: 10px; }
   .calculator__feature:first-child:nth-last-child(1) {
     /* -or- &__feature:only-child { */
     width: 100%;
     text-align: center; }
-  .calculator__feature:first-child:nth-last-child(3):not(:nth-child(3n+1)),
-  .calculator__feature:first-child:nth-last-child(3) ~ .calculator__feature:not(:nth-child(3n+1)), .calculator__feature:first-child:nth-last-child(6):not(:nth-child(3n+1)),
-  .calculator__feature:first-child:nth-last-child(6) ~ .calculator__feature:not(:nth-child(3n+1)) {
-    width: 33.333%;
-    margin-left: auto; }
-  .calculator__feature:first-child:nth-last-child(5):not(:nth-child(3)),
-  .calculator__feature:first-child:nth-last-child(5) ~ .calculator__feature:not(:nth-child(3)) {
-    margin-right: 19px; }
   .calculator__feature:first-child:nth-last-child(2),
   .calculator__feature:first-child:nth-last-child(2) ~ .calculator__feature, .calculator__feature:first-child:nth-last-child(4),
   .calculator__feature:first-child:nth-last-child(4) ~ .calculator__feature {
-    width: 50%; }
+    width: 50%;
+    margin-left: 0; }
 
 @media (max-width: 1399px) {
   .calculator__feature {

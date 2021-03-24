@@ -64,6 +64,14 @@ let cars = [
             {loan: 6, trade: 0, price: 1869},
             {loan: 5, trade: 1, price: 2038},
             {loan: 5, trade: 0, price: 2038},
+        ],
+        features: [
+            '• 10% Down Payment',
+            '• 5 Years Free Servicing',
+            '• 10 Years Warranty',
+            '• 15 Years Warranty',
+            '• 5 Years Free Warranty',
+            '• 2% Down Payment',
         ]
     },
     {
@@ -76,6 +84,14 @@ let cars = [
             {loan: 6, trade: 0, price: 1469},
             {loan: 5, trade: 1, price: 1600},
             {loan: 5, trade: 0, price: 1600},
+        ],
+        features: [
+            '• 10% Down Payment',
+            '• 5 Years Free Servicing',
+            '• 10 Years Warranty',
+            '• 15 Years Warranty',
+            '• 5 Years Free Warranty',
+            '• 2% Down Payment',
         ]
     },
     {
@@ -88,6 +104,14 @@ let cars = [
             {loan: 6, trade: 0, price: 942},
             {loan: 5, trade: 1, price: 1111},
             {loan: 5, trade: 0, price: 1111},
+        ],
+        features: [
+            '• 10% Down Payment',
+            '• 5 Years Free Servicing',
+            '• 10 Years Warranty',
+            '• 15 Years Warranty',
+            '• 5 Years Free Warranty',
+            '• 2% Down Payment',
         ]
     },
     {
@@ -100,6 +124,14 @@ let cars = [
             {loan: 6, trade: 0, price: 898},
             {loan: 5, trade: 1, price: 1060},
             {loan: 5, trade: 0, price: 1060},
+        ],
+        features: [
+            '• 10% Down Payment',
+            '• 5 Years Free Servicing',
+            '• 10 Years Warranty',
+            '• 15 Years Warranty',
+            '• 5 Years Free Warranty',
+            '• 2% Down Payment',
         ]
     },
     {
@@ -112,6 +144,14 @@ let cars = [
             {loan: 6, trade: 0, price: 920},
             {loan: 5, trade: 1, price: 1085},
             {loan: 5, trade: 0, price: 1085},
+        ],
+        features: [
+            '• 10% Down Payment',
+            '• 5 Years Free Servicing',
+            '• 10 Years Warranty',
+            '• 15 Years Warranty',
+            '• 5 Years Free Warranty',
+            '• 2% Down Payment',
         ]
     }
 ]

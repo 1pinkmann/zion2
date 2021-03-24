@@ -155,9 +155,14 @@
     }
 
     &__feature {
+        width: calc(33.333% - 7px);
         font-weight: 700;
         font-size: 15px;
         letter-spacing: -0.015em;
+    }
+
+    &__feature:not(:nth-child(3n+1)) {
+        margin-left: 10px;
     }
 
     /* one item */
@@ -166,21 +171,6 @@
         width: 100%;
         text-align: center;
     }
-
-    /* three or six items */
-    &__feature:first-child:nth-last-child(3):not(:nth-child(3n+1)),
-    &__feature:first-child:nth-last-child(3) ~ &__feature:not(:nth-child(3n+1)),
-    &__feature:first-child:nth-last-child(6):not(:nth-child(3n+1)),
-    &__feature:first-child:nth-last-child(6) ~ &__feature:not(:nth-child(3n+1)) {
-        width: 33.333%;
-        margin-left: auto;
-    } 
-
-     /* five items */
-    &__feature:first-child:nth-last-child(5):not(:nth-child(3)),
-    &__feature:first-child:nth-last-child(5) ~ &__feature:not(:nth-child(3)) {
-        margin-right: 19px;
-    } 
     
     /* two or four items */
     &__feature:first-child:nth-last-child(2),
@@ -188,6 +178,7 @@
     &__feature:first-child:nth-last-child(4),
     &__feature:first-child:nth-last-child(4) ~ &__feature {
         width: 50%;
+        margin-left: 0;
     }    
 }
 
