@@ -157,9 +157,10 @@
     &__feature {
         width: calc(33.333% - 7px);
         font-weight: 700;
-        font-size: 15px;
+        font-size: 14px;
         color: red;
         letter-spacing: -0.015em;
+        white-space: nowrap;
     }
 
     &__feature:not(:nth-child(3n+1)) {

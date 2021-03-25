@@ -9973,9 +9973,10 @@ button.complete .successMessage svg {
   .calculator__feature {
     width: calc(33.333% - 7px);
     font-weight: 700;
-    font-size: 15px;
+    font-size: 14px;
     color: red;
-    letter-spacing: -0.015em; }
+    letter-spacing: -0.015em;
+    white-space: nowrap; }
   .calculator__feature:not(:nth-child(3n+1)) {
     margin-left: 10px; }
   .calculator__feature:first-child:nth-last-child(1) {
@@ -11342,6 +11343,12 @@ header {
     #banner .banner-slide.slide-1 {
       background: url("../../images/banner-mobile.jpg") no-repeat right center;
       background-size: cover; }
+    #banner .banner-slide.slide-2 {
+      background: url("../../images/banner-mobile2.jpg") no-repeat right center;
+      background-size: cover; }
+    #banner .banner-slide.slide-3 {
+      background: url("../../images/banner-mobile3.jpg") no-repeat right center;
+      background-size: cover; }
   #banner .banner-slide-container {
     width: 100%;
     float: left;
@@ -11508,6 +11515,12 @@ header {
     height: 690px; }
     #banner .banner-slide.slide-1 {
       background: url("../../images/banner.jpg") no-repeat center top;
+      background-size: cover; }
+    #banner .banner-slide.slide-2 {
+      background: url("../../images/banner2.jpg") no-repeat center top;
+      background-size: cover; }
+    #banner .banner-slide.slide-3 {
+      background: url("../../images/banner3.jpg") no-repeat center top;
       background-size: cover; }
   #banner h1 {
     font-size: 40px;
