@@ -10116,6 +10116,181 @@ button.complete .successMessage svg {
   .calculator__title {
     font-size: 22px; } }
 
+.tabs {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; }
+  .tabs__title {
+    font-size: 35px; }
+  .tabs__menu {
+    display: flex;
+    height: 71px;
+    margin-top: 20px;
+    border: 3px solid #F1F1F1;
+    border-radius: 35px; }
+  .tabs__menu-item {
+    height: 100%; }
+  .tabs__menu-item:not(:first-child) {
+    margin-left: 5px; }
+  .tabs__menu-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 0 47px;
+    font-weight: bold;
+    font-size: 25px;
+    color: #CECECE;
+    background-color: transparent;
+    border: none;
+    border-radius: 35px;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out; }
+  .tabs__menu-button.active, .tabs__menu-button:hover {
+    background-color: #000000;
+    color: #ffffff; }
+  .tabs__wrapper {
+    width: 100%;
+    margin-top: 65px; }
+  .tabs__item {
+    display: none; }
+  .tabs__item.active {
+    display: block; }
+
+.cards-list {
+  display: flex;
+  flex-wrap: wrap; }
+  .cards-list__item {
+    width: calc(33% - 29px); }
+  .cards-list__item:not(:nth-child(3n+1)) {
+    margin-left: 50px; }
+  .cards-list__item:nth-child(n+4) {
+    margin-top: 65px; }
+
+.card {
+  color: #000000; }
+  .card:hover {
+    color: #000000;
+    text-decoration: none; }
+  .card__image-wrapper {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative; }
+  .card__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  .card__feature {
+    display: flex;
+    justify-content: space-between; }
+
+.card--product .card__image-wrapper {
+  border-radius: 25px;
+  overflow: hidden; }
+
+.card--product .card__image-wrapper:before {
+  content: '';
+  padding-top: 59%;
+  display: block; }
+
+.card--product .card__badge {
+  padding: 4px 10px;
+  font-size: 12px;
+  font-weight: bold;
+  background: #FFFFFF;
+  border-radius: 7px;
+  position: absolute;
+  top: 18px;
+  left: 18px; }
+
+.card--product .card__row {
+  margin-top: 15px; }
+
+.card--product .card__feature {
+  margin-top: 45px; }
+
+.card--product .card__feature-item {
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.5);
+  letter-spacing: -0.015em; }
+
+.card--product .card__feature-row {
+  margin-bottom: 30px; }
+
+.card--product .card__feature-title {
+  font-size: inherit;
+  font-weight: bold; }
+
+.card--product .card__feature-text {
+  margin: 0; }
+
+.card--product .card__feature-icon {
+  margin-right: 10px; }
+
+.card--product .card__feature-text--black {
+  font-weight: 500;
+  color: #000000; }
+
+.card--product .card__button {
+  height: 47px;
+  margin-top: 25px;
+  font-family: "Corporate A";
+  font-weight: bold;
+  font-size: 18px;
+  background: #FFFFFF;
+  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.05);
+  border: none;
+  border-radius: 14px;
+  transition: box-shadow 0.2s ease-in-out; }
+
+.card--product:hover .card__button {
+  box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.1); }
+
+.card--product .card__title {
+  font-size: 25px;
+  letter-spacing: -0.015em;
+  color: rgba(0, 0, 0, 0.8); }
+
+.card--product .card__price {
+  font-family: "Corporate A";
+  font-weight: bold;
+  font-size: 32px; }
+
+.card--product .card__image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.2s ease-in-out; }
+
+.card--product:hover .card__image {
+  transform: scale(1.05); }
+
+@media (max-width: 1399px) {
+  .cards-list__item {
+    width: calc(33% - 23px); }
+  .cards-list__item:not(:nth-child(3n+1)) {
+    margin-left: 40px; } }
+
+@media (max-width: 1219px) {
+  .cards-list__item {
+    width: calc(33% - 17px); }
+  .cards-list__item:not(:nth-child(3n+1)) {
+    margin-left: 30px; }
+  .cards-list__item:nth-child(n+4) {
+    margin-top: 40px; }
+  .card--product .card__title {
+    font-size: 22px; }
+  .card--product .card__price {
+    font-size: 28px; }
+  .card--product .card__feature {
+    margin-top: 30px; }
+  .card--product .card__feature-item {
+    font-size: 14px; }
+  .card--product .card__feature-icon {
+    margin-right: 5px; } }
+
 /* accordion */
 .card {
   border: none;

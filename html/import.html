@@ -1,0 +1,528 @@
+@@include('./templates/head.html', {
+'title': 'Used Import | Zion Auto Gallery Pte Ltd',
+'path': '',
+'description': '',
+'keywords': ''
+})
+
+<body>
+    <!--- Search -->
+    <div class="close-btn"> <span class="fas fa-times">X</span> </div>
+    <div class="wrapper">
+        <div class="search-data">
+            <input type="text" placeholder="Type to search..">
+            <div class="line"></div>
+            <button></button>
+        </div>
+    </div>
+    <!--- /Search -->
+
+    <!--- Car Menu -->
+    @@include('./templates/car-menu.html', {
+    'path': './all-cars',
+    'imgPath': ''
+    })
+    <!--- /Car Menu -->
+
+    <div id="wrapper">
+
+        <!--- Header -->
+        @@include('./templates/header.html', {
+        'page': 'about',
+        'path': ''
+        })
+        <!--- /Header -->
+
+        <div id="middle" class="mobile-pad">
+
+            <div class="container">
+
+                <!--- Page-banner. -->
+                <div class="page-banner" data-aos="fade-up">
+                    <div class="page-banner__wrapper">
+                        <h2 class="page-banner__title">Used Import Zion Auto Gallery</h2>
+                    </div>
+                    <div class="" data-aos="flip-left">
+                        <img src="images/calculator/calculator-banner.webp" alt="" class="img-fluid" />
+                    </div>
+                    <p class="page-banner__text">
+                        It is our belief that customer centric and reputable business practices are the keystone of any long-lasting business in the 21st century. We hope to provide the best automobile experience for you at Zion Auto Gallery.
+                    </p>
+                </div>
+                <!--- /Page-banner. -->
+
+                <!--- Tabs. -->
+                <div class="tabs" id="tabs">
+                    <h2 class="tabs__title">Brands & Models Selections</h2>
+                    <ul class="tabs__menu">
+                        <li class="tabs__menu-item">
+                            <button class="tabs__menu-button active" data-tab-button="1">Toyota</button>
+                        </li>
+                        <li class="tabs__menu-item">
+                            <button class="tabs__menu-button" data-tab-button="2">Mercedes-Benz</button>
+                        </li>
+                        <li class="tabs__menu-item">
+                            <button class="tabs__menu-button" data-tab-button="3">BMW</button>
+                        </li>
+                        <li class="tabs__menu-item">
+                            <button class="tabs__menu-button" data-tab-button="4">Porsche</button>
+                        </li>
+                        <li class="tabs__menu-item">
+                            <button class="tabs__menu-button" data-tab-button="5">Honda</button>
+                        </li>
+                    </ul>
+                    <ul class="tabs__wrapper">
+                        <li class="tabs__item active" data-tab-item="1">
+                            <ul class="cards-list">
+                                <li class="cards-list__item">
+                                    <a href="" class="card card--product">
+                                        <div class="card__image-wrapper">
+                                            <img src="./images/models/image.png" alt="" class="card__image">
+                                            <div class="card__badge">TOYOTA</div>
+                                        </div>
+                                        <div class="card__row">
+                                            <span class="card__title">Toyota Senta 1.5A G</span>
+                                            <span class="card__price">$67,800</span>
+                                        </div>
+                                        <ul class="card__feature">
+                                            <li class="card__feature-item">
+                                                <div class="card__feature-row">
+                                                    <img src="./images/icon/car.jpg" alt="" class="card__feature-icon">
+                                                    <span class="card__feature-text card__feature-text--black">53,638 KM</span>
+                                                </div>
+                                                <h4 class="card__feature-title">Registration:</h4>
+                                                <p class="card__feature-text">30-Aug-2017</p>
+                                            </li>
+                                            <li class="card__feature-item">
+                                                <div class="card__feature-row">
+                                                    <img src="./images/icon/engine.jpg" alt="" class="card__feature-icon">
+                                                    <span class="card__feature-text card__feature-text--black">1,496 CC</span>
+                                                </div>
+                                                <h4 class="card__feature-title">COE Ending:</h4>
+                                                <p class="card__feature-text">Aug-2027</p>
+                                            </li>
+                                            <li class="card__feature-item">
+                                                <div class="card__feature-row">
+                                                    <img src="./images/icon/user.jpg" alt="" class="card__feature-icon">
+                                                    <span class="card__feature-text card__feature-text--black">2</span>
+                                                </div>
+                                                <h4 class="card__feature-title">Depreciation:</h4>
+                                                <p class="card__feature-text">$9,520/YR</p>
+                                            </li>
+                                        </ul>
+                                        <button class="card__button">Click to view</button>
+                                    </a>
+                                </li>
+                                <li class="cards-list__item">
+                                    <a href="" class="card card--product">
+                                        <div class="card__image-wrapper">
+                                            <img src="./images/models/image.png" alt="" class="card__image">
+                                            <div class="card__badge">TOYOTA</div>
+                                        </div>
+                                        <div class="card__row">
+                                            <span class="card__title">Toyota Senta 1.5A G</span>
+                                            <span class="card__price">$67,800</span>
+                                        </div>
+                                        <ul class="card__feature">
+                                            <li class="card__feature-item">
+                                                <div class="card__feature-row">
+                                                    <img src="./images/icon/car.jpg" alt="" class="card__feature-icon">
+                                                    <span class="card__feature-text card__feature-text--black">53,638 KM</span>
+                                                </div>
+                                                <h4 class="card__feature-title">Registration:</h4>
+                                                <p class="card__feature-text">30-Aug-2017</p>
+                                            </li>
+                                            <li class="card__feature-item">
+                                                <div class="card__feature-row">
+                                                    <img src="./images/icon/engine.jpg" alt="" class="card__feature-icon">
+                                                    <span class="card__feature-text card__feature-text--black">1,496 CC</span>
+                                                </div>
+                                                <h4 class="card__feature-title">COE Ending:</h4>
+                                                <p class="card__feature-text">Aug-2027</p>
+                                            </li>
+                                            <li class="card__feature-item">
+                                                <div class="card__feature-row">
+                                                    <img src="./images/icon/user.jpg" alt="" class="card__feature-icon">
+                                                    <span class="card__feature-text card__feature-text--black">2</span>
+                                                </div>
+                                                <h4 class="card__feature-title">Depreciation:</h4>
+                                                <p class="card__feature-text">$9,520/YR</p>
+                                            </li>
+                                        </ul>
+                                        <button class="card__button">Click to view</button>
+                                    </a>
+                                </li>
+                                <li class="cards-list__item">
+                                    <a href="" class="card card--product">
+                                        <div class="card__image-wrapper">
+                                            <img src="./images/models/image.png" alt="" class="card__image">
+                                            <div class="card__badge">TOYOTA</div>
+                                        </div>
+                                        <div class="card__row">
+                                            <span class="card__title">Toyota Senta 1.5A G</span>
+                                            <span class="card__price">$67,800</span>
+                                        </div>
+                                        <ul class="card__feature">
+                                            <li class="card__feature-item">
+                                                <div class="card__feature-row">
+                                                    <img src="./images/icon/car.jpg" alt="" class="card__feature-icon">
+                                                    <span class="card__feature-text card__feature-text--black">53,638 KM</span>
+                                                </div>
+                                                <h4 class="card__feature-title">Registration:</h4>
+                                                <p class="card__feature-text">30-Aug-2017</p>
+                                            </li>
+                                            <li class="card__feature-item">
+                                                <div class="card__feature-row">
+                                                    <img src="./images/icon/engine.jpg" alt="" class="card__feature-icon">
+                                                    <span class="card__feature-text card__feature-text--black">1,496 CC</span>
+                                                </div>
+                                                <h4 class="card__feature-title">COE Ending:</h4>
+                                                <p class="card__feature-text">Aug-2027</p>
+                                            </li>
+                                            <li class="card__feature-item">
+                                                <div class="card__feature-row">
+                                                    <img src="./images/icon/user.jpg" alt="" class="card__feature-icon">
+                                                    <span class="card__feature-text card__feature-text--black">2</span>
+                                                </div>
+                                                <h4 class="card__feature-title">Depreciation:</h4>
+                                                <p class="card__feature-text">$9,520/YR</p>
+                                            </li>
+                                        </ul>
+                                        <button class="card__button">Click to view</button>
+                                    </a>
+                                </li>
+                                <li class="cards-list__item">
+                                    <a href="" class="card card--product">
+                                        <div class="card__image-wrapper">
+                                            <img src="./images/models/image.png" alt="" class="card__image">
+                                            <div class="card__badge">TOYOTA</div>
+                                        </div>
+                                        <div class="card__row">
+                                            <span class="card__title">Toyota Senta 1.5A G</span>
+                                            <span class="card__price">$67,800</span>
+                                        </div>
+                                        <ul class="card__feature">
+                                            <li class="card__feature-item">
+                                                <div class="card__feature-row">
+                                                    <img src="./images/icon/car.jpg" alt="" class="card__feature-icon">
+                                                    <span class="card__feature-text card__feature-text--black">53,638 KM</span>
+                                                </div>
+                                                <h4 class="card__feature-title">Registration:</h4>
+                                                <p class="card__feature-text">30-Aug-2017</p>
+                                            </li>
+                                            <li class="card__feature-item">
+                                                <div class="card__feature-row">
+                                                    <img src="./images/icon/engine.jpg" alt="" class="card__feature-icon">
+                                                    <span class="card__feature-text card__feature-text--black">1,496 CC</span>
+                                                </div>
+                                                <h4 class="card__feature-title">COE Ending:</h4>
+                                                <p class="card__feature-text">Aug-2027</p>
+                                            </li>
+                                            <li class="card__feature-item">
+                                                <div class="card__feature-row">
+                                                    <img src="./images/icon/user.jpg" alt="" class="card__feature-icon">
+                                                    <span class="card__feature-text card__feature-text--black">2</span>
+                                                </div>
+                                                <h4 class="card__feature-title">Depreciation:</h4>
+                                                <p class="card__feature-text">$9,520/YR</p>
+                                            </li>
+                                        </ul>
+                                        <button class="card__button">Click to view</button>
+                                    </a>
+                                </li>
+                                <li class="cards-list__item">
+                                    <a href="" class="card card--product">
+                                        <div class="card__image-wrapper">
+                                            <img src="./images/models/image.png" alt="" class="card__image">
+                                            <div class="card__badge">TOYOTA</div>
+                                        </div>
+                                        <div class="card__row">
+                                            <span class="card__title">Toyota Senta 1.5A G</span>
+                                            <span class="card__price">$67,800</span>
+                                        </div>
+                                        <ul class="card__feature">
+                                            <li class="card__feature-item">
+                                                <div class="card__feature-row">
+                                                    <img src="./images/icon/car.jpg" alt="" class="card__feature-icon">
+                                                    <span class="card__feature-text card__feature-text--black">53,638 KM</span>
+                                                </div>
+                                                <h4 class="card__feature-title">Registration:</h4>
+                                                <p class="card__feature-text">30-Aug-2017</p>
+                                            </li>
+                                            <li class="card__feature-item">
+                                                <div class="card__feature-row">
+                                                    <img src="./images/icon/engine.jpg" alt="" class="card__feature-icon">
+                                                    <span class="card__feature-text card__feature-text--black">1,496 CC</span>
+                                                </div>
+                                                <h4 class="card__feature-title">COE Ending:</h4>
+                                                <p class="card__feature-text">Aug-2027</p>
+                                            </li>
+                                            <li class="card__feature-item">
+                                                <div class="card__feature-row">
+                                                    <img src="./images/icon/user.jpg" alt="" class="card__feature-icon">
+                                                    <span class="card__feature-text card__feature-text--black">2</span>
+                                                </div>
+                                                <h4 class="card__feature-title">Depreciation:</h4>
+                                                <p class="card__feature-text">$9,520/YR</p>
+                                            </li>
+                                        </ul>
+                                        <button class="card__button">Click to view</button>
+                                    </a>
+                                </li>
+                                <li class="cards-list__item">
+                                    <a href="" class="card card--product">
+                                        <div class="card__image-wrapper">
+                                            <img src="./images/models/image.png" alt="" class="card__image">
+                                            <div class="card__badge">TOYOTA</div>
+                                        </div>
+                                        <div class="card__row">
+                                            <span class="card__title">Toyota Senta 1.5A G</span>
+                                            <span class="card__price">$67,800</span>
+                                        </div>
+                                        <ul class="card__feature">
+                                            <li class="card__feature-item">
+                                                <div class="card__feature-row">
+                                                    <img src="./images/icon/car.jpg" alt="" class="card__feature-icon">
+                                                    <span class="card__feature-text card__feature-text--black">53,638 KM</span>
+                                                </div>
+                                                <h4 class="card__feature-title">Registration:</h4>
+                                                <p class="card__feature-text">30-Aug-2017</p>
+                                            </li>
+                                            <li class="card__feature-item">
+                                                <div class="card__feature-row">
+                                                    <img src="./images/icon/engine.jpg" alt="" class="card__feature-icon">
+                                                    <span class="card__feature-text card__feature-text--black">1,496 CC</span>
+                                                </div>
+                                                <h4 class="card__feature-title">COE Ending:</h4>
+                                                <p class="card__feature-text">Aug-2027</p>
+                                            </li>
+                                            <li class="card__feature-item">
+                                                <div class="card__feature-row">
+                                                    <img src="./images/icon/user.jpg" alt="" class="card__feature-icon">
+                                                    <span class="card__feature-text card__feature-text--black">2</span>
+                                                </div>
+                                                <h4 class="card__feature-title">Depreciation:</h4>
+                                                <p class="card__feature-text">$9,520/YR</p>
+                                            </li>
+                                        </ul>
+                                        <button class="card__button">Click to view</button>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="tabs__item" data-tab-item="2">
+                            
+                        </li>
+                        <li class="tabs__item" data-tab-item="3">
+                            
+                        </li>
+                        <li class="tabs__item" data-tab-item="4">
+                            
+                        </li>
+                        <li class="tabs__item" data-tab-item="5">
+                            
+                        </li>
+                    </ul>
+                </div>
+                <!--- /Tabs. -->
+
+                <!--- Reviews -->
+                <div class="testimonial-section" data-aos="fade-up">
+                    <div class="container">
+                        <h2>Reviews</h2>
+                        <div class="title-text text-center">From our trusted customers</div>
+                        <div class="testimonial-box-row">
+                            <div class="testimonial-box" data-aos="flip-up">
+                                <div class="name">Kaniksha Suthan <span
+                                        class="ratings"><i></i><i></i><i></i><i></i><i></i></span></div>
+                                <p>Thank you very much Ah Hong and Nizam. Very experienced and excellent service work.
+                                    Had a break issue
+                                    and was resolved with reasonable charges by Ah Hong. Good effort and very
+                                    impressive.</p>
+                            </div>
+                            <div class="testimonial-box" data-aos="flip-up">
+                                <div class="name">Wang Qiao <span
+                                        class="ratings"><i></i><i></i><i></i><i></i><i></i></span></div>
+                                <p>Ong KH is truly a professional and have been giving adequate advises which is
+                                    helpful. He takes the
+                                    extra mile to serve his customers and i thank him for the good work and efforts.
+                                </p>
+                                <p>Highly recommended to everyone that need good services</p>
+                            </div>
+                            <div class="testimonial-box" data-aos="flip-up">
+                                <div class="name">zu xiaolong <span
+                                        class="ratings"><i></i><i></i><i></i><i></i><i></i></span></div>
+                                <p>I fully support star auto performance. Kudos to ah hong and his team</p>
+                            </div>
+                            <div class="testimonial-box" data-aos="flip-up">
+                                <div class="name">Jages Feran <span
+                                        class="ratings"><i></i><i></i><i></i><i></i><i></i></span></div>
+                                <p>Excellent job on my tyre sensors, which was not able to be installed by the external
+                                    tyre shop when i
+                                    changed my rims. Nizam assessed my sensors and retrofitted my sensors back to the
+                                    rims with improvised
+                                    ideas. Thank you for your efforts. Nizam is an expert.</p>
+                            </div>
+                            <div class="testimonial-box" data-aos="flip-down">
+                                <div class="name">Mohamad Izhar <span
+                                        class="ratings"><i></i><i></i><i></i><i></i><i></i></span></div>
+                                <p>A 1 stop place for all your car needs. From minor servicing to major overhaul, these
+                                    technicians are
+                                    very competent and will give good advice.</p>
+                                <p>All work is being done meticulously to give a brand new driving experience. Please do
+                                    not hesitate to
+                                    call them and a recommended workshop if you are looking for one. </p>
+                                <p> Good Job to Ong and team!</p>
+                            </div>
+                            <div class="testimonial-box" data-aos="flip-down">
+                                <div class="name">Bryon Pua <span
+                                        class="ratings"><i></i><i></i><i></i><i></i><i></i></span></div>
+                                <p>Go the workshop installed Auto Tailgate. Everything are fine, work properly. No any
+                                    concern. Thank
+                                    Jackie's explaination in patience. Thanks AhQiang(not very sure the technician) for
+                                    the installation.
+                                </p>
+                            </div>
+                            <div class="testimonial-box" data-aos="flip-down">
+                                <div class="name">Yap Mee Key <span
+                                        class="ratings"><i></i><i></i><i></i><i></i><i></i></span></div>
+                                <p>professional service with detail and enhance performance after auto transmission
+                                    repair. highly
+                                    recommended</p>
+                            </div>
+                            <div class="testimonial-box" data-aos="flip-down">
+                                <div class="name">Ng Xin Yi <span
+                                        class="ratings"><i></i><i></i><i></i><i></i><i></i></span></div>
+                                <p>Look for Ah Hong to enquire on car needs and servicing. Your vehicle maintenance or
+                                    enhancement request
+                                    will be received and evaluated accordingly.</p>
+                            </div>
+                            <div class="testimonial-box" data-aos="flip-down">
+                                <div class="name">Bryon Pua <span
+                                        class="ratings"><i></i><i></i><i></i><i></i><i></i></span></div>
+                                <p>Go the workshop installed Auto Tailgate. Everything are fine, work properly. No any
+                                    concern. Thank
+                                    Jackie's explaination in patience. Thanks AhQiang(not very sure the technician) for
+                                    the installation.
+                                </p>
+                            </div>
+                            <div class="testimonial-box" data-aos="flip-down">
+                                <div class="name">Yap Mee Key <span
+                                        class="ratings"><i></i><i></i><i></i><i></i><i></i></span></div>
+                                <p>professional service with detail and enhance performance after auto transmission
+                                    repair. highly
+                                    recommended</p>
+                            </div>
+                            <div class="testimonial-box" data-aos="flip-down">
+                                <div class="name">Ng Xin Yi <span
+                                        class="ratings"><i></i><i></i><i></i><i></i><i></i></span></div>
+                                <p>Look for Ah Hong to enquire on car needs and servicing. Your vehicle maintenance or
+                                    enhancement request
+                                    will be received and evaluated accordingly.</p>
+                            </div>
+                            <div class="testimonial-box" data-aos="flip-up">
+                                <div class="name">zu xiaolong <span
+                                        class="ratings"><i></i><i></i><i></i><i></i><i></i></span></div>
+                                <p>I fully support star auto performance. Kudos to ah hong and his team</p>
+                            </div>
+                            <div class="testimonial-box" data-aos="flip-up">
+                                <div class="name">Jages Feran <span
+                                        class="ratings"><i></i><i></i><i></i><i></i><i></i></span></div>
+                                <p>Excellent job on my tyre sensors, which was not able to be installed by the external
+                                    tyre shop when i
+                                    changed my rims. Nizam assessed my sensors and retrofitted my sensors back to the
+                                    rims with improvised
+                                    ideas. Thank you for your efforts. Nizam is an expert.</p>
+                            </div>
+                            <div class="testimonial-box" data-aos="flip-down">
+                                <div class="name">Mohamad Izhar <span
+                                        class="ratings"><i></i><i></i><i></i><i></i><i></i></span></div>
+                                <p>A 1 stop place for all your car needs. From minor servicing to major overhaul, these
+                                    technicians are
+                                    very competent and will give good advice.</p>
+                                <p>All work is being done meticulously to give a brand new driving experience. Please do
+                                    not hesitate to
+                                    call them and a recommended workshop if you are looking for one. </p>
+                                <p> Good Job to Ong and team!</p>
+                            </div>
+                            <div class="testimonial-box" data-aos="flip-down">
+                                <div class="name">Bryon Pua <span
+                                        class="ratings"><i></i><i></i><i></i><i></i><i></i></span></div>
+                                <p>Go the workshop installed Auto Tailgate. Everything are fine, work properly. No any
+                                    concern. Thank
+                                    Jackie's explaination in patience. Thanks AhQiang(not very sure the technician) for
+                                    the installation.
+                                </p>
+                            </div>
+                            <div class="testimonial-box" data-aos="flip-down">
+                                <div class="name">Yap Mee Key <span
+                                        class="ratings"><i></i><i></i><i></i><i></i><i></i></span></div>
+                                <p>professional service with detail and enhance performance after auto transmission
+                                    repair. highly
+                                    recommended</p>
+                            </div>
+                            <div class="testimonial-box" data-aos="flip-down">
+                                <div class="name">Ng Xin Yi <span
+                                        class="ratings"><i></i><i></i><i></i><i></i><i></i></span></div>
+                                <p>Look for Ah Hong to enquire on car needs and servicing. Your vehicle maintenance or
+                                    enhancement request
+                                    will be received and evaluated accordingly.</p>
+                            </div>
+                            <div class="testimonial-box" data-aos="flip-up">
+                                <div class="name">zu xiaolong <span
+                                        class="ratings"><i></i><i></i><i></i><i></i><i></i></span></div>
+                                <p>I fully support star auto performance. Kudos to ah hong and his team</p>
+                            </div>
+                            <div class="testimonial-box" data-aos="flip-up">
+                                <div class="name">Jages Feran <span
+                                        class="ratings"><i></i><i></i><i></i><i></i><i></i></span></div>
+                                <p>Excellent job on my tyre sensors, which was not able to be installed by the external
+                                    tyre shop when i
+                                    changed my rims. Nizam assessed my sensors and retrofitted my sensors back to the
+                                    rims with improvised
+                                    ideas. Thank you for your efforts. Nizam is an expert.</p>
+                            </div>
+                            <div class="testimonial-box" data-aos="flip-down">
+                                <div class="name">Mohamad Izhar <span
+                                        class="ratings"><i></i><i></i><i></i><i></i><i></i></span></div>
+                                <p>A 1 stop place for all your car needs. From minor servicing to major overhaul, these
+                                    technicians are
+                                    very competent and will give good advice.</p>
+                                <p>All work is being done meticulously to give a brand new driving experience. Please do
+                                    not hesitate to
+                                    call them and a recommended workshop if you are looking for one. </p>
+                                <p> Good Job to Ong and team!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--- /Reviews -->
+
+            </div>
+
+        </div>
+
+        <!--- Footer -->
+        @@include('./templates/footer.html', {
+        'path': ''
+        })
+        <!--- /Footer -->
+
+    </div>
+    <script src="js/jquery/jquery-1.12.4.min.js"></script>
+    <script src="js/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="js/minified/aos.js"></script>
+    <script src="js/minified/pushy.js"></script>
+    <script src="js/jquery/jquery.nice-select.min.js"></script>
+    <script src="js/minified/owl.carousel.min.js"></script>
+    <script src="js/minified/jquery.simpleLoadMore.js"></script>
+    <script src="js/validation/jquery.validate.min.js"></script>
+    <script src="js/validation/additional-methods.min.js"></script>
+    <script src="js/minified/app.js"></script>
+    <script src="js/minified/jquery.menu-aim.js"></script>
+    <script src="js/minified/mobile-menu.js"></script>
+    <script src="js/minified/fancy-button.js"></script>
+    @@include('./templates/linkedIn.html')
+</body>
+
+</html>
