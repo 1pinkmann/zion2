@@ -10416,7 +10416,9 @@ button.complete .successMessage svg {
     margin-right: 10px; }
   .card--product .card__button {
     height: 40px;
-    font-size: 18px; } }
+    font-size: 18px; }
+  .card--product .card__badge {
+    font-size: 10px; } }
 
 /* accordion */
 .card {

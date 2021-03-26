@@ -315,5 +315,9 @@
             height: 40px;
             font-size: 18px;
         }
+
+        &--product &__badge {
+            font-size: 10px;
+        }
     }
 }
