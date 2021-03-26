@@ -114,6 +114,10 @@ var App = function () {
       $(this).addClass('selected').parent().parent().removeClass('open').children('.caption').text($(this).text());
     });
 
+    $('.list-dropdown .tabs__menu-button').on('click', function () {
+      $('.list-dropdown .caption').text($(this).text());
+    });
+
     $(document).on('keyup', function (evt) {
       if ((evt.keyCode || evt.which) === 27) {
         $('.list-dropdown').removeClass('open');

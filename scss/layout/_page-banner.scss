@@ -98,6 +98,13 @@
             font-size: 19px;
         }
     }
+
+    .page-banner {
+
+        &--v3 &__title {
+            margin-bottom: 30px;
+        }
+    }
 }
    
 @media (max-width: 991px) {
@@ -146,6 +153,13 @@
         &__text {
             margin-top: 10px;
             font-size: 13px;
+        }
+    }
+
+    .page-banner {
+
+        &--v3 &__title {
+            margin-bottom: 20px;
         }
     }
 }

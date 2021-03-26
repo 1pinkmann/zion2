@@ -10155,6 +10155,11 @@ button.complete .successMessage svg {
     display: none; }
   .tabs__item.active {
     display: block; }
+  .tabs__mobile-button {
+    border: none; }
+  .tabs__list-dropdown.list-dropdown {
+    width: unset;
+    float: unset; }
 
 @media (max-width: 1219px) {
   .tabs__menu-button {
@@ -10170,6 +10175,8 @@ button.complete .successMessage svg {
   .tabs__menu {
     height: 50px;
     width: 100%; }
+  .tabs__list-dropdown.list-dropdown {
+    width: 100%; }
   .tabs__menu-item {
     width: 20%; }
   .tabs__menu-item:not(:first-child) {
@@ -10178,6 +10185,46 @@ button.complete .successMessage svg {
     font-size: 1.7vw;
     width: 100%;
     padding: 0 20px; } }
+
+@media (max-width: 767px) {
+  .tabs__menu {
+    flex-direction: column;
+    height: unset;
+    margin-top: 0;
+    border: none;
+    border-radius: 0;
+    position: absolute;
+    top: 100%;
+    z-index: 2;
+    background-color: #000;
+    border-top: 1px solid rgba(222, 226, 230, 0.2);
+    opacity: 0;
+    visibility: hidden; }
+  .tabs__menu-button {
+    justify-content: flex-start;
+    height: 66px;
+    padding: 0 15px;
+    font-family: "Corporate A";
+    font-size: 24px;
+    color: #ffffff; }
+  .tabs__menu-button.active {
+    color: #ed2724; }
+  .tabs__menu-item {
+    width: 100%; }
+  .tabs__menu-button:nth-child(n) {
+    margin: 0; }
+  .tabs__list-dropdown {
+    margin-top: 20px; }
+  .tabs__title {
+    font-size: 5vw;
+    text-align: center; }
+  .open .tabs__menu {
+    opacity: 1;
+    visibility: visible; } }
+
+@media (max-width: 479px) {
+  .tabs__title {
+    font-size: 6vw; } }
 
 .cards-list {
   display: flex;
@@ -10189,25 +10236,21 @@ button.complete .successMessage svg {
   .cards-list__item:nth-child(n+4) {
     margin-top: 65px; }
 
-.card {
-  color: #000000; }
-  .card:hover {
-    color: #000000;
-    text-decoration: none; }
-  .card__image-wrapper {
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    position: relative; }
-  .card__row {
-    display: flex;
-    justify-content: space-between;
-    align-items: center; }
-  .card__feature {
-    display: flex;
-    justify-content: space-between; }
+.card--product {
+  color: #000000;
+  border-radius: 0;
+  min-width: unset;
+  padding: 0 !important; }
+
+.card--product:hover {
+  color: #000000;
+  text-decoration: none; }
 
 .card--product .card__image-wrapper {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
   border-radius: 25px;
   overflow: hidden; }
 
@@ -10228,9 +10271,14 @@ button.complete .successMessage svg {
   left: 18px; }
 
 .card--product .card__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   margin-top: 15px; }
 
 .card--product .card__feature {
+  display: flex;
+  justify-content: space-between;
   margin-top: 45px; }
 
 .card--product .card__feature-item {
@@ -10259,6 +10307,7 @@ button.complete .successMessage svg {
   color: #000000; }
 
 .card--product .card__button {
+  width: 100%;
   height: 47px;
   margin-top: 25px;
   font-family: "Corporate A";
@@ -10343,6 +10392,31 @@ button.complete .successMessage svg {
     font-size: 3vw; }
   .card--product .card__feature-item {
     font-size: 1.7vw; } }
+
+@media (max-width: 767px) {
+  .card--product .card__button {
+    height: 36px;
+    font-size: 16px; } }
+
+@media (max-width: 619px) {
+  .cards-list__item {
+    width: 100%; }
+  .cards-list__item:nth-child(n) {
+    margin: 0; }
+  .cards-list__item:not(:first-child) {
+    margin-top: 40px; }
+  .card--product .card__title {
+    font-size: 5vw; }
+  .card--product .card__price {
+    font-size: 6vw; }
+  .card--product .card__feature-item {
+    font-size: 3.2vw; }
+  .card--product .card__feature-icon {
+    transform: unset;
+    margin-right: 10px; }
+  .card--product .card__button {
+    height: 40px;
+    font-size: 18px; } }
 
 /* accordion */
 .card {
@@ -13023,7 +13097,9 @@ footer {
     .page-banner__text {
       margin-top: 30px;
       margin-bottom: 30px;
-      font-size: 19px; } }
+      font-size: 19px; }
+  .page-banner--v3 .page-banner__title {
+    margin-bottom: 30px; } }
 
 @media (max-width: 991px) {
   .page-banner {
@@ -13051,7 +13127,9 @@ footer {
       font-size: 31px; }
     .page-banner__text {
       margin-top: 10px;
-      font-size: 13px; } }
+      font-size: 13px; }
+  .page-banner--v3 .page-banner__title {
+    margin-bottom: 20px; } }
 
 @media (max-width: 619px) {
   .page-banner__images {
