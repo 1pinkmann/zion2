@@ -12355,7 +12355,8 @@ footer {
     width: 100%;
     padding-top: 30px;
     padding-bottom: 150px;
-    position: relative; }
+    position: relative;
+    transform: translate3d(0, 0, 0); }
   .testimonial-section .testimonial-box {
     width: 100%;
     display: inline-block;
