@@ -60,3 +60,52 @@
         display: block;
     }
 }
+
+@media (max-width: 1219px) {
+
+    .tabs {
+
+        &__menu-button {
+            font-size: 2vw;
+        }
+    }
+}
+
+@media (max-width: 1099px) {
+
+    .tabs {
+
+        &__wrapper {
+            margin-top: 40px;
+        }
+    }
+}
+
+@media (max-width: 989px) {
+
+    .tabs {
+
+        &__title {
+            font-size: 4vw;
+        }
+
+        &__menu {
+            height: 50px;
+            width: 100%;
+        }
+
+        &__menu-item {
+            width: 20%;
+        }
+
+        &__menu-item:not(:first-child) {
+            margin-left: 0;
+        }
+
+        &__menu-button {
+            font-size: 1.7vw;
+            width: 100%;
+            padding: 0 20px;
+        }
+    }
+}
